@@ -7,7 +7,7 @@ package Module_1.FanApp;
 public class Fan {
 
     /** 
-     * The following static variables represent different speed states the Fan can have.
+     * The following constant variables represent different speed states the Fan can have.
      * These could be represented as a enum in the future.
     */
     final static int STOPPED = 0;
@@ -113,8 +113,8 @@ public class Fan {
     Fan(boolean inToggle, int inSpeed, double inRadius, String inColor) {
         fanToggle = inToggle;
         fanSpeed = Math.clamp(inSpeed, STOPPED, FAST); // Ensure that only valid values are permitted for the speed setting.
-        fanRadius = Math.abs(inRadius); // Ensure that the radius is non-negative
-        fanColor = inColor.toLowerCase(); // We want to ensure we have consistency across strings to prevent erratic if conditional reads in future behavior
+        fanRadius = Math.abs(inRadius); // Ensure that the radius is non-negative.
+        fanColor = inColor.toLowerCase(); // Ensure we have consistency across strings (all lowercase) to prevent erratic conditional reads in future behavior.
     }
 
     /** 
