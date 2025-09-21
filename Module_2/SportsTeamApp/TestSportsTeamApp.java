@@ -36,7 +36,7 @@ public class TestSportsTeamApp {
       for (String player : playerNames) 
       {
         team.addPlayer(player); // Iterate through every team name the player has entered and add it to the newly team.
-      }
+      } // end for
 
       System.out.println("\n--Team Summary--");
       System.out.printf("Number of players in team: %1$d", team.getPlayerCount()); // Output the details of the team the user created, starting with the team name.
@@ -50,11 +50,11 @@ public class TestSportsTeamApp {
           stringBuilder.append(','); // Add a comma separation if this is the 2nd player or beyond.
         }
         stringBuilder.append(getPlayers[i]); // Append the string with the player name.
-      }
+      } // end for
+      
       System.out.printf("\nPlayers on team: %1$s", stringBuilder.toString()); // Output the player names on the team.
 
       System.out.println("\n\nContinue? (y/n): ");
-
       String confirm = scanner.next(); // Check if the user wishes to create more teams.
       if (confirm.trim().toLowerCase().compareTo("y") == 0) // If the user types "Y" or "y", repeat the loop.
       { 
