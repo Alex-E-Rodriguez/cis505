@@ -35,7 +35,7 @@ public class TestCustomerAccountApp {
                 continueInnerInput = false;
             }
             catch (InputMismatchException e) { // If the input is not a number, it is invalid. Inform the user and prompt them to try again.
-                System.out.println("\n  Error: Account ID must be a number");
+                System.out.println("\n  Error:  Invalid Option");
                 scanner.next(); // Clear the input buffer
             } // end try... catch
         } while(continueInnerInput); // end do... while
@@ -57,7 +57,7 @@ public class TestCustomerAccountApp {
                         amt = scanner.nextDouble(); // Parse the user's input for the amount into a Double (nullable)
                         if (amt < 0) // If the input is negative, it is invalid. Inform the user and prompt them try to again. 
                         {
-                            System.out.println("\n  Error: Amount must be non-negative\n");
+                            System.out.println("\n  Error:  Invalid Option\n");
                         }
                         else // Otherwise, deposit the amount specified and exit the inner loop
                         {
@@ -66,7 +66,7 @@ public class TestCustomerAccountApp {
                         }
                     }
                     catch (InputMismatchException e) { // If the input is not a number, it is invalid. Inform the user and prompt them to try again.
-                        System.out.println("\n  Error: Amount must be a number\n");
+                        System.out.println("\n  Error:  Invalid Option\n");
                         scanner.next(); // Clear the input buffer
                     } // end try... catch
                 } while (continueInnerInput); // end do... while
@@ -81,7 +81,7 @@ public class TestCustomerAccountApp {
                         amt = scanner.nextDouble(); // Parse the user's input for the amount into a Double (nullable)
                         if (amt < 0) // If the input is negative, it is invalid. Inform the user and prompt them try to again. 
                         {
-                            System.out.println("\n  Error: Amount must be non-negative\n");
+                            System.out.println("\n  Error:  Invalid Option\n");
                         }
                         else // Otherwise, deposit the amount specified and exit the inner loop
                         {
@@ -90,7 +90,7 @@ public class TestCustomerAccountApp {
                         }
                     }
                     catch (InputMismatchException e) { // If the input is not a number, it is invalid. Inform the user and prompt them to try again.
-                        System.out.println("\n  Error: Amount must be a number\n");
+                        System.out.println("\n  Error:  Invalid Option\n");
                         scanner.next(); // Clear the input buffer
                     } // end try... catch
                 } while (continueInnerInput); // end do... while
