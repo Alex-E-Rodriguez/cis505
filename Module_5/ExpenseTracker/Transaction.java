@@ -13,19 +13,30 @@ public class Transaction {
     private String description; 
     private double amount;
 
+    /** 
+     * Default constructor for the Transaction class.
+     * @return returns an instance of Transaction with the current date, a blank description, and an amount of $0.00.
+    */
     Transaction() 
     {
         date =  LocalDateTime.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy"));
         description = "";
         amount = 0.0d;
-    }
+    } // end constructor
 
+    /** 
+     * Overloaded constructor for the Transaction class.
+     * @param date String
+     * @param description String
+     * @param double amount
+     * @return returns an instance of Transaction with the specified date, description, and amount.
+    */
     Transaction(String date, String description, double amount) 
     {
         this.date = date;
         this.description = description;
         this.amount = amount;
-    }
+    } // end constructor
 
     /** 
      * Method with no arguments, which is used as an accessor for the transaction date.
