@@ -18,7 +18,7 @@ public class TransactionIO {
 
     // Constant Variables
     private final static String FILE_NAME = "expenses.txt"; // The name of the file used for tracking expenses.
-    public final static String PARAM_SEPARATOR = "‡"; // The dummy character written in the file to indicate the next parameter on a line of transactions. Note this follows regex, so be cautious on the string choice.
+    private final static String PARAM_SEPARATOR = "‡"; // The dummy character written in the file to indicate the next parameter on a line of transactions. Note this follows regex, so be cautious on the string choice.
     // Static variables
     private static File file = new File(FILE_NAME); // The actual File for tracking expenses. Because all functions used for it are static, this must also be static (Java error 33554506 otherwise).
 
